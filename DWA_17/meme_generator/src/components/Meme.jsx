@@ -12,10 +12,8 @@ export default function Meme() {
     function randomImage() {
         const randomMemeIndex = Math.floor(Math.random()*100 + 1)
         
-        return memesData.data.memes[randomMemeIndex].url
+        return console.log(memesData.data.memes[randomMemeIndex].url)
     }
-    
-    
     
     return (
         <main>
@@ -32,7 +30,7 @@ export default function Meme() {
                 />
                 <button 
                     className="form--button"
-                    onClick={console.log(`${randomImage()}`)}
+                    onClick={randomImage}
                 >
                     Get a new meme image 🖼
                 </button>
