@@ -1,10 +1,25 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom';
 import App from './App.jsx'
 import './App.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+// function App() {
+//     const [thingsArray, setThingsArray] = React.useState(["Thing 1", "Thing 2"])
+    
+//     function addItem() {
+//         setThingsArray(prevState => {
+//             return [...prevState, `Thing ${prevState.length + 1}`]
+//         })
+//     }
+    
+//     const thingsElements = thingsArray.map(thing => <p key={thing}>{thing}</p>)
+    
+//     return (
+//         <div>
+//             <button onClick={addItem}>Add Item</button>
+//             {thingsElements}
+//         </div>
+//     )
+// }
+
+ReactDOM.render(<App />, document.getElementById('root'));
